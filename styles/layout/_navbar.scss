@@ -1,0 +1,27 @@
+#navbar {
+  @include vendor("display", "flex");
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+
+  background-color: black;
+  justify-content: center;
+  padding: 0.4rem 0 0.4rem 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      div:first-of-type {
+        display: flex;
+        cursor: pointer;
+
+        &:hover {
+          color: lightgray;
+        }
+      }
+    }
+  }
+}

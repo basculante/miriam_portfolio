@@ -37,4 +37,8 @@
 		&.page {
 			@include vendor('justify-content', 'flex-start');
 		}
+
+		&.articles-wrapper {
+			@include vendor('align-items', 'normal');
+		}
 	}
